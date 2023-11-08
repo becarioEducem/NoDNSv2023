@@ -1,0 +1,18 @@
+$TTL 1D
+$ORIGIN 19.31.172.in-addr.arpa.
+@	IN SOA	dns1.lovedns.intranet. dgonzalez.lovedns.intranet. (
+					4	; serial
+					1D	; refresh
+					1H	; retry
+					1W	; expire
+					3H )	; minimum
+;Name Servers
+		IN	NS		dns1.lovedns.intranet.
+		IN	NS		dns2.lovedns.intranet.
+
+;Reverse IPv4 Lookups
+21	IN	PTR	dns1.lovedns.intranet.
+22	IN	PTR	dns2.lovedns.intranet.
+30	IN	PTR	web.lovedns.intranet.
+40	IN	PTR	db.lovedns.intranet.
+50	IN	PTR	mail.lovedns.intranet.

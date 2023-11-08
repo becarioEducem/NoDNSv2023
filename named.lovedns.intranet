@@ -1,0 +1,13 @@
+$TTL 1D
+$ORIGIN lovedns.intranet.
+@	IN SOA	dns1 dgonzalez (
+					4	; serial
+					1D	; refresh
+					1H	; retry
+					1W	; expire
+					3H )	; minimum
+;Name Servers
+dns1		IN	A		172.31.19.21
+dns1		IN	A		fe80::83a:d7ff:fe00:61f4	
+dns2		IN	A		172.31.19.22
+dns2		IN	A		fe80::855:60ff:fe3f:da95 
